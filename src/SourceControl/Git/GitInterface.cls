@@ -21,7 +21,7 @@ ClassMethod SearchGitDirectoriesAndInstallHooks(Directory As %String(MAXLEN=255)
 	 		}
 	 		
 	 		// otherwise, keep searching deeper
-	 		set sc = ..SearchGitDirectoriesAndInstallHooks(name)
+	 		set sc = ..SearchGitDirectoriesAndInstallHooks(name, Parameters)
 	 		break:$$$ISERR(sc)
  		}
  	}
