@@ -8,7 +8,6 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="SourceControl.Git.PKG"/>
-      <Resource Name="dc.PackageSample.PKG"/>
 
       <CSPApplication
         Path="/csp/user/sc"
