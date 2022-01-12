@@ -284,7 +284,7 @@ ClassMethod SetSourceControlStatus(Enable As %Boolean) As %Status
 			do parameters.SetAt(..GetRESTUrl("onexternalchange"), "RESTServiceURL")
 		
 			write !,"Installing git hooks into all .git/hooks directories...",!
-			do ##class(GitInterface).SearchGitDirectoriesAndInstallHooks(..GetSetting("CodeDirectory"), parameters)
+			do ##class(GitInterface).SearchGitDirectoriesAndInstallHooks(..GetSetting("CodeDirectory")_"/"_$namespace, parameters)
 		
 			write "Note: If you 'git init' later, re-enable source control to reinstall the hooks.",!
 		}

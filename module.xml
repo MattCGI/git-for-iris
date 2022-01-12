@@ -22,10 +22,6 @@
 
       <Invokes>
         <Invoke Class="SourceControl.Git.Utils" Method="AddDefaultSettings"></Invoke>
-        <Invoke Class="SourceControl.Git.Utils" Method="AddPackageToSourceControl">
-          <Arg>dc.PackageSample</Arg>
-          <Arg>USER</Arg>
-        </Invoke>
       </Invokes>
     </Module>
   </Document>
